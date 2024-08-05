@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 10px; */
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .parent div{
+            background-color: plum;
+            height: 100px;
+            font-size: 25px;
+            /* place-items: center; */
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .parent div:nth-child(1){
+            background-color: rgb(177, 132, 88);
+            grid-column: 1/5;
+            grid-row: 4/5;
+            display: grid;
+        }
+        .parent div:nth-child(3){
+            background-color: yellowgreen;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            display: grid;
+        } 
+        .parent div:nth-child(6){
+            background-color: aqua;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: grid;
+        }
+        .parent div:nth-child(8){
+            background-color: navy;
+            grid-column: 4/5;
+            grid-row: 2/4;
+            display: grid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
